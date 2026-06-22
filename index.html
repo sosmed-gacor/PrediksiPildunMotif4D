@@ -127,16 +127,13 @@ background-size: cover;
 
 <div class="container animate__animated animate__fadeIn">
     
-    <div id="scroll_buttons" style="position: fixed; left: 1rem; top: 1rem; z-index: 1;">
+    <div id="" style="position: fixed; left: 1rem; top: 1rem; z-index: 1;">
         <div class="mb-2">
-            <button type="button" class="btn share-button zoom-animation-subtle" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" data-toggle="tooltip" data-placement="right" title="Scroll top" data-tooltip-hide-on-click>
                 <i class="fas fa-fw fa-arrow-up"></i>
-            </button>
+            
         </div>
         <div>
-            <button type="button" class="btn share-button zoom-animation-subtle" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });" data-toggle="tooltip" data-placement="right" title="Scroll bottom" data-tooltip-hide-on-click>
                 <i class="fas fa-fw fa-arrow-down"></i>
-            </button>
         </div>
     </div>
 
@@ -268,18 +265,172 @@ box-shadow: 0px 0px 20px 0px #00000010;
     margin:auto;
     box-sizing:border-box;
 }
+.wc-card{
+    position:relative;
+
+    background:linear-gradient(
+        180deg,
+        #071223,
+        #0b1730
+    );
+
+    border:1px solid rgba(0,255,255,.25);
+    border-radius:22px;
+
+    padding:18px;
+    margin:20px 0;
+
+    overflow:hidden;
+
+    transition:.25s ease;
+
+    box-shadow:
+        0 0 12px rgba(0,255,255,.08);
+}
+
+.wc-card:hover{
+    transform:translateY(-4px);
+
+    border-color:rgba(0,255,255,.45);
+
+    box-shadow:
+        0 0 20px rgba(0,255,255,.25);
+}
+.wc-card{
+    position:relative;
+
+    background:linear-gradient(
+        180deg,
+        #071223 0%,
+        #0b1730 100%
+    );
+
+    width:92%;
+    margin:25px auto;
+
+    padding:18px;
+
+    border-radius:22px;
+    border:1px solid rgba(0,255,255,.20);
+
+    box-shadow:
+        0 0 10px rgba(0,255,255,.08);
+
+    overflow:hidden;
+}
+  
+
+.wc-card:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:15px;
+    right:15px;
+    height:2px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #00e5ff,
+        transparent
+    );
+}
 
 .match-row{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-top:10px;
 }
 
 .team{
-    width:50%;
+    width:40%;
     text-align:center;
 }
+
+.team img{
+    width:60px;
+    border-radius:6px;
+}
+
+.team-name{
+    margin-top:10px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #7ff8ff 30%,
+        #00dfff 60%,
+        #0080b3 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+
+    text-shadow:
+        0 0 10px rgba(0,229,255,.35);
+}
+.vs-box{
+    width:20%;
+    text-align:center;
+}
+
+.vs{
+    font-size:30px;
+    font-weight:900;
+    color:#00e5ff;
+    text-shadow:0 0 10px rgba(0,229,255,.6);
+}
+
+.time{
+    color:#ffd700;
+    font-size:13px;
+    font-weight:700;
+    margin-top:2px;
+}
+
+.divider{
+    height:1px;
+    background:#1d2748;
+    margin:15px 0;
+}
+
+.prediksi{
+    text-align:center;
+    color:#fff;
+    line-height:1.9;
+    font-size:15px;
+}
+
+.pick{
+    margin-top:8px;
+    font-size:16px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.8px;
+
+    color:#00e5ff;
+
+    text-shadow:
+        0 0 5px rgba(0,229,255,.6),
+        0 0 15px rgba(0,229,255,.25);
+}
+
+.confidence{
+    display:inline-block;
+    margin-top:10px;
+    padding:4px 12px;
+    border-radius:20px;
+    background:rgba(0,255,255,.12);
+    border:1px solid rgba(0,255,255,.25);
+    color:#00e5ff;
+    font-size:12px;
+    font-weight:700;
+}
+
 
 .team img{
     width:70px;
@@ -475,10 +626,6 @@ box-shadow: 0px 0px 20px 0px #00000010;
 
 </div>
 
-
-
-
-
 <!-- SCRIPT JUMBOTRON -->
 <div class="swiper-pagination"></div></div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -505,274 +652,282 @@ speed:800
 .swiper{
     margin-bottom: 35px !important;
   }</style>
-  <div id="biolink_block_id_1574" data-biolink-block-id="1574" class="col-12 my-2">
-    <div class="link-faq" id="accordion_1574" >
-                
-                <div class="card my-2 link-btn-rounded" style="border-width: 0;border-color: #FFFFFF;border-style: double;background: #DECCCC2B;">
-            <div class="py-2 link-btn-rounded border-0" id="accordion_1574_header_1" style="background: #DECCCC2B;">
-                <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-decoration-none link-btn-rounded" style="color: #FFFFFF;text-align: center;" type="button" data-toggle="collapse" data-target="#accordion_1574_content_1" aria-expanded="true" aria-controls="accordion_1574_content_1">
-                        PREDIKSI WORLD CUP 2026                     </button>
-                </h2>
-            </div>
+  
+<style>
+.prediksi-group-btn{
+    display:block;
+    width:100%;
+    padding:18px 20px;
+    text-align:center;
+    text-decoration:none;
 
-            <div id="accordion_1574_content_1" class="collapse" aria-labelledby="accordion_1574_header_1" data-parent="#accordion_1574">
-                <div class="card-body" style="color: #FFFFFF;text-align: center;">
-                   
-<br />
-<div style="max-width:600px;margin:auto;font-family:Arial,sans-serif">
+    color:#ffffff;
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:1px;
 
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(0,255,255,.35);
+    border-radius:18px;
+
+    box-shadow:
+        0 0 20px rgba(0,255,255,.25),
+        inset 0 0 15px rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.prediksi-group-btn:hover{
+    color:#fff;
+    text-decoration:none;
+    transform:translateY(-2px);
+    box-shadow:
+        0 0 30px rgba(0,255,255,.5),
+        inset 0 0 15px rgba(255,255,255,.1);
+}
+  .prediksi-group-btn{
+    display:block;
+    width:100%;
+    padding:16px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    font-weight:800;
+    cursor:pointer;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(0,255,255,.35);
+    border-radius:18px;
+
+    box-shadow:
+    0 0 20px rgba(0,255,255,.25),
+    inset 0 0 15px rgba(255,255,255,.08);
+}
+
+.prediksi-content{
+    display:none;
+    margin-top:12px;
+}
+
+.prediksi-content.active{
+    display:block;
+}
+  .prediksi-group-btn{
+    position:relative;
+    overflow:hidden;
+    background:rgba(0,15,35,.45);
+    backdrop-filter:blur(15px);
+    border-radius:18px;
+    border:1px solid rgba(0,255,255,.35);
+}
+
+.prediksi-group-btn::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,255,255,.15),
+        transparent
+    );
+    pointer-events:none;
+}
+  .prediksi-wrapper{
+    max-width:600px;
+    margin:15px auto;
+
+    background:rgba(5,15,35,.75);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(0,255,255,.35);
+    border-radius:22px;
+
+    box-shadow:
+        0 0 15px rgba(0,255,255,.25),
+        inset 0 0 20px rgba(255,255,255,.04);
+
+    overflow:hidden;
+}
+  .bet-btn{
+    display:inline-block;
+    min-width:110px;
+
+    border-radius:25px;
+
+    background:linear-gradient(
+        180deg,
+        #f7ffff 0%,
+        #bff7ff 50%,
+        #7edcff 100%
+    );
+
+    color:#004c66;
+    font-size:13px;
+    font-weight:800;
+
+    text-decoration:none;
+    padding:10px 18px;
+
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,.9),
+        0 3px 8px rgba(0,0,0,.15);
+
+    transition:.25s ease;
+}
+
+.bet-btn:hover{
+    transform:translateY(-1px);
+    filter:brightness(1.05);
+}
+</style>
+  <script>
+function togglePrediksi(){
+    document
+    .getElementById("prediksiContent")
+    .classList.toggle("active");
+}
+</script>
+<div class="prediksi-wrapper">
+
+    <button class="prediksi-group-btn"
+            data-toggle="collapse"
+            data-target="#prediksiWorldCup">
+        ⚽ PREDIKSI WORLD CUP 2026 ⚽
+    </button>
+
+
+<div id="prediksiWorldCup" class="collapse">
 
 <!-- MATCH 1 -->
-<div style="background:#0b1020;color:#fff;padding:15px;border-radius:15px;margin:15px 0;box-shadow:0 0 15px rgba(0,255,255,.15)">
-<div style="display:flex;justify-content:space-between;align-items:center;">
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/ar.png" width="60">
-<div style="margin-top:8px;font-weight:700">ARGENTINA</div>
-</div>
-
-<div style="text-align:center;width:20%">
-<div style="font-size:24px;font-weight:800;color:#00e5ff">VS</div>
-<div style="color:#ffd700;font-size:13px;">23/06 • 00.00 WIB</div>
-</div>
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/at.png" width="60">
-<div style="margin-top:8px;font-weight:700">AUSTRIA</div>
-</div>
-
-</div>
-
-<hr style="border-color:#1d2748;margin:12px 0;">
-
-<div style="text-align:center;">
-<div><b>Prediksi Skor:</b> 3 - 0</div>
-<div><b>Handicap:</b> Argentina -1½</div>
-<div><b>Over/Under:</b> Over 2¾</div>
-<div><b>Rekomendasi:</b> ARGENTINA WIN</div>
+      <div class="wc-card">
+      <div class="match-row">
+      <div class="team">
+      <img src="https://flagcdn.com/w80/ar.png">
+      <div class="team-name">ARGENTINA</div>
+      </div>
+      <div class="vs-box">
+      <div class="vs">VS</div>
+      <div class="time">23/06 • 00.00 WIB</div>
+      </div>
+      <div class="team">
+      <img src="https://flagcdn.com/w80/at.png">
+      <div class="team-name">AUSTRIA</div>
 </div>
 </div>
-
+	  <div class="divider"></div>
+      <div class="prediksi">
+      <div><b>Prediksi Skor:</b> 3 - 0</div>
+      <div><b>Handicap:</b> Argentina -1½</div>
+      <div><b>Over/Under:</b> Over 2¾</div>
+      <div class="pick">🔥 ARGENTINA WIN</div>
+      <a href="#" class="play-btn">▶ PLAY NOW</a>
+</div>
+</div>
 <!-- MATCH 2 -->
-<div style="background:#0b1020;color:#fff;padding:15px;border-radius:15px;margin:15px 0;box-shadow:0 0 15px rgba(0,255,255,.15)">
-<div style="display:flex;justify-content:space-between;align-items:center;">
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/fr.png" width="60">
-<div style="margin-top:8px;font-weight:700">FRANCE</div>
-</div>
-
-<div style="text-align:center;width:20%">
-<div style="font-size:24px;font-weight:800;color:#00e5ff">VS</div>
-<div style="color:#ffd700;font-size:13px;">23/06 • 04.00 WIB</div>
-</div>
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/iq.png" width="60">
-<div style="margin-top:8px;font-weight:700">IRAQ</div>
-</div>
-
-</div>
-
-<hr style="border-color:#1d2748;margin:12px 0;">
-
-<div style="text-align:center;">
-<div><b>Prediksi Skor:</b> 4 - 0</div>
-<div><b>Handicap:</b> France -2</div>
-<div><b>Over/Under:</b> Over 3</div>
-<div><b>Rekomendasi:</b> FRANCE WIN</div>
+      <div class="wc-card">
+      <div class="match-row">
+      <div class="team">
+      <img src="https://flagcdn.com/w80/fr.png">
+      <div class="team-name">FRANCE</div>
+      </div>
+      <div class="vs-box">
+      <div class="vs">VS</div>
+      <div class="time">23/06 • 04.00 WIB</div>
+      </div>
+      <div class="team">
+      <img src="https://flagcdn.com/w80/iq.png">
+      <div class="team-name">IRAQ</div>
 </div>
 </div>
-
-<!-- MATCH 3 -->
-<div style="background:#0b1020;color:#fff;padding:15px;border-radius:15px;margin:15px 0;box-shadow:0 0 15px rgba(0,255,255,.15)">
-<div style="display:flex;justify-content:space-between;align-items:center;">
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/no.png" width="60">
-<div style="margin-top:8px;font-weight:700">NORWAY</div>
-</div>
-
-<div style="text-align:center;width:20%">
-<div style="font-size:24px;font-weight:800;color:#00e5ff">VS</div>
-<div style="color:#ffd700;font-size:13px;">23/06 • 07.00 WIB</div>
-</div>
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/sn.png" width="60">
-<div style="margin-top:8px;font-weight:700">SENEGAL</div>
-</div>
-
-</div>
-
-<hr style="border-color:#1d2748;margin:12px 0;">
-
-<div style="text-align:center;">
-<div><b>Prediksi Skor:</b> 2 - 1</div>
-<div><b>Handicap:</b> Norway -0.25</div>
-<div><b>Over/Under:</b> Over 2.5</div>
-<div><b>Rekomendasi:</b> NORWAY DNB</div>
+	  <div class="divider"></div>
+      <div class="prediksi">
+      <div><b>Prediksi Skor:</b> 4 - 0</div>
+      <div><b>Handicap:</b> France -2</div>
+      <div><b>Over/Under:</b> Over 3</div>
+      <div class="pick">🔥 FRANCE WIN</div>
+      <a href="#" class="play-btn">▶ PLAY NOW</a>
 </div>
 </div>
-
-<!-- MATCH 4 -->
-<div style="background:#0b1020;color:#fff;padding:15px;border-radius:15px;margin:15px 0;box-shadow:0 0 15px rgba(0,255,255,.15)">
-<div style="display:flex;justify-content:space-between;align-items:center;">
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/jo.png" width="60">
-<div style="margin-top:8px;font-weight:700">JORDAN</div>
+      <div class="wc-card">
+      <div class="match-row">
+      <div class="team">
+      <img src="https://flagcdn.com/w80/no.png">
+      <div class="team-name">NORWAY</div>
+      </div>
+      <div class="vs-box">
+      <div class="vs">VS</div>
+      <div class="time">23/06 • 07.00 WIB</div>
 </div>
-
-<div style="text-align:center;width:20%">
-<div style="font-size:24px;font-weight:800;color:#00e5ff">VS</div>
-<div style="color:#ffd700;font-size:13px;">23/06 • 10.00 WIB</div>
-</div>
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/dz.png" width="60">
-<div style="margin-top:8px;font-weight:700">ALGERIA</div>
-</div>
-
-</div>
-
-<hr style="border-color:#1d2748;margin:12px 0;">
-
-<div style="text-align:center;">
-<div><b>Prediksi Skor:</b> 1 - 2</div>
-<div><b>Handicap:</b> Algeria -0.5</div>
-<div><b>Over/Under:</b> Over 2.25</div>
-<div><b>Rekomendasi:</b> ALGERIA WIN</div>
+      <div class="team">
+      <img src="https://flagcdn.com/w80/sn.png">
+      <div class="team-name">SENEGAL</div>
 </div>
 </div>
-
-<!-- MATCH 5 -->
-<div style="background:#0b1020;color:#fff;padding:15px;border-radius:15px;margin:15px 0;box-shadow:0 0 15px rgba(0,255,255,.15)">
-<div style="display:flex;justify-content:space-between;align-items:center;">
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/pt.png" width="60">
-<div style="margin-top:8px;font-weight:700">PORTUGAL</div>
-</div>
-
-<div style="text-align:center;width:20%">
-<div style="font-size:24px;font-weight:800;color:#00e5ff">VS</div>
-<div style="color:#ffd700;font-size:13px;">24/06 • 00.00 WIB</div>
-</div>
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/uz.png" width="60">
-<div style="margin-top:8px;font-weight:700">UZBEKISTAN</div>
-</div>
-
-</div>
-
-<hr style="border-color:#1d2748;margin:12px 0;">
-
-<div style="text-align:center;">
-<div><b>Prediksi Skor:</b> 3 - 1</div>
-<div><b>Handicap:</b> Portugal -1.5</div>
-<div><b>Over/Under:</b> Over 2.75</div>
-<div><b>Rekomendasi:</b> PORTUGAL WIN</div>
+      <div class="divider"></div>
+      <div class="prediksi">
+      <div><b>Prediksi Skor:</b> 2 - 1</div>
+      <div><b>Handicap:</b> Norway -0.25</div>
+      <div><b>Over/Under:</b> Over 2.5</div>
+      <div class="pick">🔥 NORWAY DNB</div>
+      <a href="#" class="play-btn">▶ PLAY NOW</a>
 </div>
 </div>
-
-<!-- MATCH 6 -->
-<div style="background:#0b1020;color:#fff;padding:15px;border-radius:15px;margin:15px 0;box-shadow:0 0 15px rgba(0,255,255,.15)">
-<div style="display:flex;justify-content:space-between;align-items:center;">
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/gb-eng.png" width="60">
-<div style="margin-top:8px;font-weight:700">ENGLAND</div>
+  <!-- MATCH 13 -->
+      <div class="wc-card">
+      <div class="match-row">
+      <div class="team">
+      <img src="https://flagcdn.com/w80/jo.png">
+      <div class="team-name">JORDAN</div>
 </div>
-
-<div style="text-align:center;width:20%">
-<div style="font-size:24px;font-weight:800;color:#00e5ff">VS</div>
-<div style="color:#ffd700;font-size:13px;">24/06 • 03.00 WIB</div>
+      <div class="vs-box">
+      <div class="vs">VS</div>
+      <div class="time">23/06 • 10.00 WIB</div>
 </div>
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/gh.png" width="60">
-<div style="margin-top:8px;font-weight:700">GHANA</div>
-</div>
-
-</div>
-
-<hr style="border-color:#1d2748;margin:12px 0;">
-
-<div style="text-align:center;">
-<div><b>Prediksi Skor:</b> 2 - 0</div>
-<div><b>Handicap:</b> England -1</div>
-<div><b>Over/Under:</b> Under 2.75</div>
-<div><b>Rekomendasi:</b> ENGLAND WIN</div>
+      <div class="team">
+      <img src="https://flagcdn.com/w80/dz.png">
+      <div class="team-name">ALGERIA</div>
 </div>
 </div>
-
-<!-- MATCH 7 -->
-<div style="background:#0b1020;color:#fff;padding:15px;border-radius:15px;margin:15px 0;box-shadow:0 0 15px rgba(0,255,255,.15)">
-<div style="display:flex;justify-content:space-between;align-items:center;">
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/pa.png" width="60">
-<div style="margin-top:8px;font-weight:700">PANAMA</div>
-</div>
-
-<div style="text-align:center;width:20%">
-<div style="font-size:24px;font-weight:800;color:#00e5ff">VS</div>
-<div style="color:#ffd700;font-size:13px;">24/06 • 06.00 WIB</div>
-</div>
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/hr.png" width="60">
-<div style="margin-top:8px;font-weight:700">CROATIA</div>
-</div>
-
-</div>
-
-<hr style="border-color:#1d2748;margin:12px 0;">
-
-<div style="text-align:center;">
-<div><b>Prediksi Skor:</b> 0 - 2</div>
-<div><b>Handicap:</b> Croatia -1</div>
-<div><b>Over/Under:</b> Under 2.5</div>
-<div><b>Rekomendasi:</b> CROATIA WIN</div>
+      <div class="divider"></div>
+      <div class="prediksi">
+      <div><b>Prediksi Skor:</b> 1 - 2</div>
+      <div><b>Handicap:</b> Algeria -0.5</div>
+      <div><b>Over/Under:</b> Over 2.25</div>
+      <div class="pick">🔥 ALGERIA WIN</div>
+      <a href="#" class="play-btn">▶ PLAY NOW</a>
 </div>
 </div>
-
-<!-- MATCH 8 -->
-<div style="background:#0b1020;color:#fff;padding:15px;border-radius:15px;margin:15px 0;box-shadow:0 0 15px rgba(0,255,255,.15)">
-<div style="display:flex;justify-content:space-between;align-items:center;">
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/co.png" width="60">
-<div style="margin-top:8px;font-weight:700">COLOMBIA</div>
-</div>
-
-<div style="text-align:center;width:20%">
-<div style="font-size:24px;font-weight:800;color:#00e5ff">VS</div>
-<div style="color:#ffd700;font-size:13px;">24/06 • 09.00 WIB</div>
-</div>
-
-<div style="text-align:center;width:40%">
-<img src="https://flagcdn.com/w80/cd.png" width="60">
-<div style="margin-top:8px;font-weight:700">D.R. CONGO</div>
-</div>
-
-</div>
-
-<hr style="border-color:#1d2748;margin:12px 0;">
-
-<div style="text-align:center;">
-<div><b>Prediksi Skor:</b> 2 - 0</div>
-<div><b>Handicap:</b> Colombia -1</div>
-<div><b>Over/Under:</b> Under 2.75</div>
-<div><b>Rekomendasi:</b> COLOMBIA WIN</div>
-</div>
-</div>
-
 <!-- MATCH 13 -->
-
+        <div class="wc-card">
+        <div class="match-row">
+        <div class="team">
+        <img src="https://flagcdn.com/w80/pt.png">
+        <div class="team-name">PORTUGAL</div>
+</div>
+        <div class="vs-box">
+        <div class="vs">VS</div>
+        <div class="time">24/06 • 00.00 WIB</div>
+        </div>
+        <div class="team">
+        <img src="https://flagcdn.com/w80/uz.png">
+        <div class="team-name">UZBEKISTAN</div>
+</div>
+</div>
+        <div class="divider"></div>
+        <div class="prediksi">
+        <div><b>Prediksi Skor:</b> 3 - 1</div>
+        <div><b>Handicap:</b> Portugal -1.5</div>
+        <div><b>Over/Under:</b> Over 2.75</div>
+        <div class="pick">🔥 PORTUGAL WIN</div>
+        <a href="#" class="play-btn">▶ PLAY NOW</a>
+</div>
+</div>
 </div>
 
 
@@ -1055,93 +1210,86 @@ z-index:2;
 /* ==========================
 PLAY BUTTON
 ========================== */
-
 .play-btn{
+    position:relative;
+    display:inline-block;
 
-margin-top:12px;
+    min-width:120px;
+    padding:12px 20px;
 
-padding:9px 24px;
+    text-align:center;
+    text-decoration:none;
 
-border-radius:50px;
+    color:#24536a;
+    font-size:14px;
+    font-weight:800;
 
-font-size:12px;
-font-weight:900;
+    border-radius:30px;
 
-letter-spacing:1px;
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #dff8ff 35%,
+        #9ce8ff 70%,
+        #6fd3ff 100%
+    );
 
-color:#0a3240;
+    border:1px solid rgba(255,255,255,.6);
 
-background:
-linear-gradient(
-180deg,
-#ffffff,
-#dff6ff 45%,
-#87CEEB
-);
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,.95),
+        inset 0 -2px 3px rgba(0,0,0,.08),
+        0 4px 10px rgba(0,229,255,.25);
 
-border:1px solid rgba(255,255,255,.4);
-
-box-shadow:
-inset 0 2px 0 rgba(255,255,255,.8),
-inset 0 -4px 8px rgba(0,0,0,.15),
-0 4px 12px rgba(135,206,235,.12);
-
-position:relative;
-
-overflow:hidden;
-
-transition:.3s ease;
-
+    overflow:hidden;
+    transition:all .25s ease;
 }
 
-/* EFEK TULISAN TERUKIR */
+/* Efek kilat glossy */
+.play-btn:before{
+    content:'';
+    position:absolute;
 
-.play-btn{
+    top:0;
+    left:-120%;
 
-text-shadow:
-0 1px 0 rgba(255,255,255,.4),
-0 -1px 0 rgba(0,0,0,.15);
+    width:60%;
+    height:100%;
 
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.75),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+    transition:.7s;
 }
 
-/* GLOSSY BUTTON */
-
-.play-btn::before{
-
-content:'';
-
-position:absolute;
-
-top:2px;
-left:8%;
-
-width:84%;
-height:40%;
-
-border-radius:50px;
-
-background:
-linear-gradient(
-180deg,
-rgba(255,255,255,.65),
-transparent);
-
+.play-btn:hover:before{
+    left:150%;
 }
-
-/* HOVER BUTTON */
 
 .play-btn:hover{
+    color:#1f4c61;
+    text-decoration:none;
 
-transform:
-translateY(-1px);
+    transform:
+        translateY(-2px)
+        scale(1.03);
 
-box-shadow:
-inset 0 2px 0 rgba(255,255,255,.8),
-inset 0 -4px 8px rgba(0,0,0,.15),
-0 6px 15px rgba(135,206,235,.15);
-
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,.95),
+        inset 0 -2px 3px rgba(0,0,0,.08),
+        0 8px 20px rgba(0,229,255,.35);
 }
 
+.play-btn:active{
+    transform:
+        translateY(1px)
+        scale(.98);
+}
 /* ==========================
 COPYRIGHT
 ========================== */
@@ -1387,17 +1535,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             <script src="https://shortq.org/themes/altum/assets/js/libraries/fontawesome-solid.min.js?v=5300"></script>
             <script src="https://shortq.org/themes/altum/assets/js/libraries/fontawesome-brands.min.js?v=5300"></script>
     
-        <script>
-        'use strict';
-
-        const toggle_scroll_buttons = () => {
-            const scroll_buttons = document.getElementById('scroll_buttons');
-            scroll_buttons.style.display = document.body.scrollHeight > window.innerHeight ? 'block' : 'none';
-        };
-
-        window.addEventListener('load', toggle_scroll_buttons);
-        window.addEventListener('resize', toggle_scroll_buttons);
-    </script>
 
     <script src="https://shortq.org/themes/altum/assets/js/libraries/clipboard.min.js?v=5300"></script>
 
