@@ -259,11 +259,13 @@ box-shadow: 0px 0px 20px 0px #00000010;
 }
 .match-card{
     background:linear-gradient(180deg,#0a1322,#111827);
-    border-radius:18px;
-    padding:20px;
+    border-radius:15px;
+    padding:10px;
     text-align:center;
     color:#fff;
-    height:300px;
+    height:250px;
+    width:90%;
+    margin:auto;
     box-sizing:border-box;
 }
 
@@ -303,17 +305,23 @@ box-shadow: 0px 0px 20px 0px #00000010;
     line-height:1;
 }
 
-.bet-btn{
-    display:inline-block;
-    background:#ffd400;
-    color:#000;
-    padding:10px 28px;
-    border-radius:8px;
-    font-weight:800;
-    text-decoration:none;
-    margin-top:18px;
-}
+.bet-btn {
+                                display: inline-block;
+                                min-width: 95px;
+                                border-radius: 8px;
+                                background: linear-gradient(180deg, #ffcf21 0%, #f0ab00 100%);
+                                color: #1d1d1d;
+                                font-size: 14px;
+                                font-weight: 800;
+                                text-decoration: none;
+                                padding: 10px 16px;
+                                box-shadow: inset 0 1px 0 rgba(255,255,255,.45);
+                            }
 
+                            .bet-btn:hover {
+                                color: #1d1d1d;
+                                filter: brightness(1.03);
+                            }
 /* Posisi titik slider */
 .swiper-pagination{
     position: relative !important;
@@ -333,13 +341,27 @@ box-shadow: 0px 0px 20px 0px #00000010;
     width: 20px;
     border-radius: 20px;
 }
+.league-name {
+                                font-size: 14px;
+                                font-weight: 700;
+                                letter-spacing: .4px;
+                                text-transform: uppercase;
+                                text-align: center;
+                                margin-bottom: 2px;
+                                color: #ffffff;
+                            }
+.league-name {
+                                    font-size: 13px;
+                                    margin-bottom: 2px;
+                                }
+
 </style>
 <div class="fifaSwiperWrap">
 <div class="swiper fifaSwiper"><div class="swiper-wrapper">
 <!-- MATCH 1 -->
 <div class="swiper-slide">
 <div class="match-card">
-<div>⚽ FIFA WORLD CUP 2026 ⚽</div>
+<div class="league-name">⚽ FIFA WORLD CUP 2026 ⚽</div>
 <div class="match-time">23 JUN 2026 - 00:00 WIB</div>
 <div class="match-row">
 <div class="team"><img src="https://flagcdn.com/48x36/ar.png"><div>Argentina</div></div>
@@ -353,7 +375,7 @@ box-shadow: 0px 0px 20px 0px #00000010;
 <!-- MATCH 2 -->
 <div class="swiper-slide">
 <div class="match-card">
-<div>⚽ FIFA WORLD CUP 2026 ⚽</div>
+<div class="league-name">⚽ FIFA WORLD CUP 2026 ⚽</div>
 <div class="match-time">23 JUN 2026 - 04:00 WIB</div>
 <div class="match-row">
 <div class="team"><img src="https://flagcdn.com/48x36/fr.png"><div>France</div></div>
@@ -367,7 +389,7 @@ box-shadow: 0px 0px 20px 0px #00000010;
 <!-- MATCH 3 -->
 <div class="swiper-slide">
 <div class="match-card">
-<div>⚽ FIFA WORLD CUP 2026 ⚽</div>
+<div class="league-name">⚽ FIFA WORLD CUP 2026 ⚽</div>
 <div class="match-time">23 JUN 2026 - 07:00 WIB</div>
 <div class="match-row">
 <div class="team"><img src="https://flagcdn.com/48x36/no.png"><div>Norway</div></div>
@@ -381,7 +403,7 @@ box-shadow: 0px 0px 20px 0px #00000010;
 <!-- MATCH 4 -->
 <div class="swiper-slide">
 <div class="match-card">
-<div>⚽ FIFA WORLD CUP 2026 ⚽</div>
+<div class="league-name">⚽ FIFA WORLD CUP 2026 ⚽</div>
 <div class="match-time">23 JUN 2026 - 10:00 WIB</div>
 <div class="match-row">
 <div class="team"><img src="https://flagcdn.com/48x36/jo.png"><div>Jordan</div></div>
@@ -395,7 +417,7 @@ box-shadow: 0px 0px 20px 0px #00000010;
 <!-- MATCH 5 -->
 <div class="swiper-slide">
 <div class="match-card">
-<div>⚽ FIFA WORLD CUP 2026 ⚽</div>
+<div class="league-name">⚽ FIFA WORLD CUP 2026 ⚽</div>
 <div class="match-time">24 JUN 2026 - 00:00 WIB</div>
 <div class="match-row">
 <div class="team"><img src="https://flagcdn.com/48x36/pt.png"><div>Portugal</div></div>
@@ -409,7 +431,7 @@ box-shadow: 0px 0px 20px 0px #00000010;
 <!-- MATCH 6 -->
 <div class="swiper-slide">
 <div class="match-card">
-<div>⚽ FIFA WORLD CUP 2026 ⚽</div>
+<div class="league-name">⚽ FIFA WORLD CUP 2026 ⚽</div>
 <div class="match-time">24 JUN 2026 - 03:00 WIB</div>
 <div class="match-row">
 <div class="team"><img src="https://flagcdn.com/48x36/gb-eng.png"><div>England</div></div>
@@ -423,7 +445,7 @@ box-shadow: 0px 0px 20px 0px #00000010;
 <!-- MATCH 7 -->
 <div class="swiper-slide">
 <div class="match-card">
-<div>⚽ FIFA WORLD CUP 2026 ⚽</div>
+<div class="league-name">⚽ FIFA WORLD CUP 2026 ⚽</div>
 <div class="match-time">24 JUN 2026 - 06:00 WIB</div>
 <div class="match-row">
 <div class="team"><img src="https://flagcdn.com/48x36/pa.png"><div>Panama</div></div>
@@ -437,7 +459,7 @@ box-shadow: 0px 0px 20px 0px #00000010;
 <!-- MATCH 8 -->
 <div class="swiper-slide">
 <div class="match-card">
-<div>⚽ FIFA WORLD CUP 2026 ⚽</div>
+<div class="league-name">⚽ FIFA WORLD CUP 2026 ⚽</div>
 <div class="match-time">24 JUN 2026 - 09:00 WIB</div>
 <div class="match-row">
 <div class="team"><img src="https://flagcdn.com/48x36/co.png"><div>Colombia</div></div>
