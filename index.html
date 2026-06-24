@@ -846,6 +846,70 @@ speed:800
     transform:translateY(-1px);
     filter:brightness(1.05);
 }
+  .prediksi-group-btn{
+    position:relative;
+    width:100%;
+    padding:18px 24px;
+    border:none;
+    border-radius:16px;
+    cursor:pointer;
+    overflow:hidden;
+
+    background:linear-gradient(
+        180deg,
+        #4fc3ff 0%,
+        #1e88e5 35%,
+        #1565c0 70%,
+        #0d47a1 100%
+    );
+
+    color:#fff;
+
+    /* RESPONSIVE FONT */
+    font-size:clamp(12px, 2vw, 18px);
+
+    font-weight:800;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    text-align:center;
+    line-height:1.4;
+
+    box-shadow:
+        0 2px 0 #08306b,
+        0 6px 15px rgba(0,0,0,.25),
+        0 12px 30px rgba(30,136,229,.35),
+        inset 0 2px 0 rgba(255,255,255,.4),
+        inset 0 -2px 0 rgba(0,0,0,.15);
+
+    text-shadow:
+        0 1px 2px rgba(0,0,0,.3),
+        0 0 12px rgba(255,255,255,.5);
+
+    transition:all .35s ease;
+}
+
+/* HP Kecil */
+@media (max-width:480px){
+    .prediksi-group-btn{
+        padding:14px 10px;
+        letter-spacing:.5px;
+    }
+}
+
+/* Tablet */
+@media (min-width:768px){
+    .prediksi-group-btn{
+        font-size:clamp(15px,1.8vw,20px);
+    }
+}
+
+/* Desktop Besar */
+@media (min-width:1200px){
+    .prediksi-group-btn{
+        font-size:20px;
+        padding:20px 28px;
+    }
+}
 </style>
   <script>
 function togglePrediksi(){
