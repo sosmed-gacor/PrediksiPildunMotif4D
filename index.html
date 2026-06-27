@@ -1421,152 +1421,75 @@ function togglePrediksi(){
   </div>
 </div>
 </div>
-  <!-- Jumpscare Overlay -->
-<div id="jumpscare-overlay">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDLRidtqg8VTKt08CWlOM6pxekaDL_lDVecsP7EkkU5zYcMpvj3z9TwCWh&s=10" alt="Jumpscare">
+ <!-- Jumpscare Overlay -->
+<div id="jumpscare">
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjSuuJqpibWPXrWYyiskpwy6rnx9FCYcQjtxJ0_PHU7KqXIdm_XcyDLUpbJzT509HCNOrcSKHzQiWnBOftivsF4_YU7pgbC4YRvSdyHIGQsq4g50VFwPyufegHLR9-CGceGwIhyhF3h8QYwpjvbRnQgDH6Euw6AYs7P54tZT5cU5f7XvqqcjJAENS8fXEY3" alt="Scary">
 </div>
 
-<!-- Opsional -->
-<audio id="jumpscare-sound" preload="auto">
+<audio id="scream" preload="auto">
     <source src="https://flexible-teal-prhlydmq.edgeone.dev/freesound_community-fuzzy-jumpscare-80560.mp3" type="audio/mpeg">
 </audio>
-  <br>
-  <script>
-    (function(){
 
-const overlay = document.getElementById("jumpscare-overlay");
-const sound = document.getElementById("jumpscare-sound");
-
-let running = false;
-
-function jumpscare(){
-
-    if(running) return;
-    running = true;
-
-    overlay.classList.add("show");
-
-    if(navigator.vibrate){
-        navigator.vibrate([200,100,200,100,500]);
-    }
-
-    if(sound){
-        sound.currentTime = 0;
-        sound.play().catch(()=>{});
-    }
-
-    setTimeout(()=>{
-        overlay.classList.remove("show");
-        running = false;
-    },2500);
-
-}
-
-// CTRL + U
-document.addEventListener("keydown",function(e){
-
-    const key = e.key.toLowerCase();
-
-    if(e.ctrlKey && key==="u"){
-        e.preventDefault();
-        jumpscare();
-    }
-
-});
-
-// F12
-document.addEventListener("keydown",function(e){
-
-    if(e.key==="F12"){
-        e.preventDefault();
-        jumpscare();
-    }
-
-});
-
-// CTRL + SHIFT + I
-document.addEventListener("keydown",function(e){
-
-    const key=e.key.toLowerCase();
-
-    if(e.ctrlKey && e.shiftKey && key==="i"){
-        e.preventDefault();
-        jumpscare();
-    }
-
-});
-
-// CTRL + SHIFT + J
-document.addEventListener("keydown",function(e){
-
-    const key=e.key.toLowerCase();
-
-    if(e.ctrlKey && e.shiftKey && key==="j"){
-        e.preventDefault();
-        jumpscare();
-    }
-
-});
-
-// CTRL + SHIFT + C
-document.addEventListener("keydown",function(e){
-
-    const key=e.key.toLowerCase();
-
-    if(e.ctrlKey && e.shiftKey && key==="c"){
-        e.preventDefault();
-        jumpscare();
-    }
-
-});
-
-// Klik kanan
-document.addEventListener("contextmenu",function(e){
-    e.preventDefault();
-    jumpscare();
-});
-
-    })();</script>
- <style>
-   #jumpscare-overlay{
+<style>
+#jumpscare{
     position:fixed;
     inset:0;
     background:#000;
-    display:flex;
+    display:none;
     justify-content:center;
     align-items:center;
     z-index:999999999;
-    visibility:hidden;
-    opacity:0;
-    transition:.15s;
-}
-
-#jumpscare-overlay.show{
-    visibility:visible;
-    opacity:1;
     animation:flash .08s infinite;
 }
 
-#jumpscare-overlay img{
-    width:100vw;
-    height:100vh;
+#jumpscare img{
+    width:100%;
+    height:100%;
     object-fit:cover;
-    animation:shake .08s infinite;
 }
 
 @keyframes flash{
     0%{background:#000;}
-    50%{background:#300;}
+    50%{background:#fff;}
     100%{background:#000;}
 }
+</style>
 
-@keyframes shake{
-    0%{transform:translate(0,0) scale(1);}
-    25%{transform:translate(-8px,5px) scale(1.03);}
-    50%{transform:translate(8px,-5px) scale(1.05);}
-    75%{transform:translate(-5px,-8px) scale(1.03);}
-    100%{transform:translate(0,0) scale(1);}
-} </style>              
+<script>
+function showJumpScare(){
+    const js = document.getElementById("jumpscare");
+    const audio = document.getElementById("scream");
+
+    js.style.display = "flex";
+
+    audio.currentTime = 0;
+    audio.play().catch(()=>{});
+
+    setTimeout(()=>{
+        js.style.display="none";
+    },2500);
+}
+
+document.addEventListener("keydown",function(e){
+
+    if(
+        e.key==="F12" ||
+        (e.ctrlKey && (e.key==="u" || e.key==="U")) ||
+        (e.ctrlKey && e.shiftKey &&
+            ["I","i","J","j","C","c"].includes(e.key))
+    ){
+        e.preventDefault();
+        showJumpScare();
+        return false;
+    }
+
+});
+
+document.addEventListener("contextmenu",e=>{
+    e.preventDefault();
+    showJumpScare();
+});
+</script>             
 <footer class="cyber-footer">
 
 <div class="cyber-title">
